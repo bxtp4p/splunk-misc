@@ -7,7 +7,7 @@ Instructions for creating a k3s cluster on Multipass.
 Create the master node with Multipass:
 
 ```
-export K3S_MASTER_NAME=k3s-mastertest && \
+export K3S_MASTER_NAME=k3s-master && \
 multipass launch --name ${K3S_MASTER_NAME} --cpus 4 --mem 4096M --disk 20G
 ```
 
