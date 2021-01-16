@@ -27,7 +27,9 @@ git checkout otel-refactoring
 
 Deploy the application with Skaffold:
 
+```
 skaffold run -d=docker.io/${DOCKER_ID}
+```
 
 Make sure the app pods are running:
 

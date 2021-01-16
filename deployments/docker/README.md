@@ -12,3 +12,9 @@ ACCESS_TOKEN         | SFX access token  | Yes      | none
 REALM                | SFX realm         | No       | us0 
 HOSTNAME             |The hostname to report under | Yes | none
 AGENT_VERSION        | The version of the agent to run. See [tags](https://quay.io/repository/signalfx/signalfx-agent?tag=latest&tab=tags). | No | 5.7.1
+
+Install by executing the script: 
+
+```
+./run-sfx-smart-agent.sh
+```
