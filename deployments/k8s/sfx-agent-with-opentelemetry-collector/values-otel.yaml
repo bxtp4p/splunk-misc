@@ -1,0 +1,9 @@
+traceEndpointUrl: "http://otel-collector:7276/v2/trace"
+ingestUrl: "http://otel-collector:9943"
+
+monitors:
+- type: signalfx-forwarder
+  listenAddress: 0.0.0.0:9080
+
+writer:
+  traceExportFormat: sapm
