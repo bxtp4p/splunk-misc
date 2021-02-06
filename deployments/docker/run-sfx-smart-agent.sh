@@ -9,6 +9,7 @@ docker run -d \
     -v /:/hostfs:ro \
     -v /var/run/docker.sock:/var/run/docker.sock:ro \
     -v /etc/passwd:/etc/passwd:ro \
+    -v ${PWD}/agent.yaml:/etc/signalfx/agent.yaml \
     -e SFX_ACCESS_TOKEN=${ACCESS_TOKEN} \
     -e SFX_INGEST_URL="https://ingest.${SFX_REALM}.signalfx.com" \
     -e SFX_API_URL="https://api.${SFX_REALM}.signalfx.com" \
