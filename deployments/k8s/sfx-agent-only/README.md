@@ -22,7 +22,9 @@ helm install -f values.yaml \
   --set clusterName=${CLUSTER_NAME} \
   --set signalFxAccessToken=${ACCESS_TOKEN} \
   --set signalFxRealm=${REALM} \
-  --set traceEndpointUrl="https://ingest.${REALM}.signalfx.com/v2/trace"
+  --set gatherDockerMetrics=false \
+  --set kubeletAPI.url=https://localhost:10250 \
+  --set traceEndpointUrl="https://ingest.${REALM}.signalfx.com/v2/trace" \
   signalfx-agent signalfx/signalfx-agent
 ```
 

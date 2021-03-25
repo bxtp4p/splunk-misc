@@ -39,6 +39,8 @@ helm install -f values-otel.yaml \
   --set clusterName=${CLUSTER_NAME} \
   --set signalFxAccessToken=${ACCESS_TOKEN} \
   --set signalFxRealm=${REALM} \
+  --set gatherDockerMetrics=false \
+  --set kubeletAPI.url=https://localhost:10250 \
  signalfx-agent signalfx/signalfx-agent
 ```
 
